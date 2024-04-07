@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Pedra, Papel e Tesoura</title>
+</head>
+
+<body>
+    <section class="principal">
+        <section class="container">
+            <h1>Pedra, papel e tesoura</h1>
+
+            <div class="botoes">
+                <button id="pedra" onclick="playHuman('pedra')">&#x1f44a;</button>
+                <button id="papel" onclick="playHuman('papel')">&#x1f590;</button>
+                <button id="tesoura" onclick="playHuman('tesoura')">&#X270c;</button>
+            </div>
+
+            <p class="result"></p>
+
+            <section class="pontuacao">
+                <p>Você: <span class="minha-pontuacao">0</span></p>
+                <span>vs</span>
+                <p>Computador: <span class="pontuacao-maquina">0</span></p>
+            </section>
+        </section>
+    </section>
+</body>
+
+<script src="./js/app.js"></script>
+
+</html>
